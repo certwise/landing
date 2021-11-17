@@ -5,7 +5,7 @@ import HeroHome from '../partials/HeroHome';
 import FeaturesHome from '../partials/FeaturesHome';
 import FeaturesBlocks from '../partials/FeaturesBlocks';
 import FeaturesWorld from '../partials/FeaturesWorld';
-import News from '../partials/News';
+// import News from '../partials/News';
 import Cta from '../partials/Cta';
 import Footer from '../partials/Footer';
 
@@ -24,7 +24,7 @@ function Home() {
         <FeaturesHome />
         <FeaturesBlocks />
         <FeaturesWorld />
-        <News />
+        {/* <News /> */}
         <Cta />
 
       </main>
