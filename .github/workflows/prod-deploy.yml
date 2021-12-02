@@ -20,7 +20,7 @@ jobs:
       - name: Install Dependencies
         run: yarn
       - name: Build
-        run: yarn build
+        run: CI=false yarn build
       - name: Upload build artifacts
         uses: actions/upload-artifact@v2
         with:
