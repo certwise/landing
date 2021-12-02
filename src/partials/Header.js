@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link as a } from 'react-router-dom';
 import Transition from '../utils/Transition.js';
 import Dropdown from '../utils/Dropdown';
 
@@ -49,7 +49,7 @@ function Header() {
           {/* Site branding */}
           <div className="flex-shrink-0 mr-4">
             {/* Logo */}
-            <Link to="/" className="block" aria-label="Certwise">
+            <a to="/" className="block" aria-label="Certwise">
               <svg className="w-8 h-8" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <radialGradient cx="21.152%" cy="86.063%" fx="21.152%" fy="86.063%" r="79.941%" id="header-logo">
@@ -60,7 +60,7 @@ function Header() {
                 </defs>
                 <rect width="32" height="32" rx="16" fill="url(#header-logo)" fillRule="nonzero" />
               </svg>
-            </Link>
+            </a>
           </div>
 
           {/* Desktop navigation */}
@@ -69,38 +69,38 @@ function Header() {
             {/* Desktop menu links */}
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
-                <Link to="/product" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Product</Link>
+                <a to="/product" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Product</a>
               </li>
               <li>
-                <Link to="/blog" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Blog</Link>
+                <a to="/blog" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Blog</a>
               </li>              
               {/* 1st level: hover */}
               <Dropdown title="Resources">
                 {/* 2nd level: hover */}
                 <li>
-                  <Link to="/documentation" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Documentation</Link>
+                  <a to="/documentation" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Documentation</a>
                 </li>
                 <li>
-                  <Link to="/faq" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">FAQs</Link>
+                  <a to="/faq" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">FAQs</a>
                 </li>
                 <li>
-                  <Link to="/support" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Support center</Link>
+                  <a to="/support" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Support center</a>
                 </li>
               </Dropdown>
               <li>
-                <Link to="/pricing" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Pricing</Link>
+                <a to="/pricing" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Pricing</a>
               </li>
             </ul>
 
             {/* Desktop sign in links */}
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
-                <Link to="/signin" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>
+                <a href="https://console.certwise.app/signin" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in</a>
               </li>
               <li>
-                <Link to="/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
+                <a href="https://console.certwise.app/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
                   <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-teal-500">Early Access &#8594;</span>
-                </Link>
+                </a>
               </li>
             </ul>
 
@@ -141,38 +141,38 @@ function Header() {
               >
                 <ul className="px-5 py-2">
                   <li>
-                    <Link to="/pricing" className="flex text-gray-600 hover:text-gray-900 py-2">Pricing</Link>
+                    <a to="/pricing" className="flex text-gray-600 hover:text-gray-900 py-2">Pricing</a>
                   </li>
                   <li>
-                    <Link to="/about" className="flex text-gray-600 hover:text-gray-900 py-2">About us</Link>
+                    <a to="/about" className="flex text-gray-600 hover:text-gray-900 py-2">About us</a>
                   </li>
                   <li>
-                    <Link to="/tutorials" className="flex text-gray-600 hover:text-gray-900 py-2">Tutorials</Link>
+                    <a to="/tutorials" className="flex text-gray-600 hover:text-gray-900 py-2">Tutorials</a>
                   </li>  
                   <li>
-                    <Link to="/blog" className="flex text-gray-600 hover:text-gray-900 py-2">Blog</Link>
+                    <a to="/blog" className="flex text-gray-600 hover:text-gray-900 py-2">Blog</a>
                   </li>                                  
                   <li className="py-2 my-2 border-t border-b border-gray-200">
                     <span className="flex text-gray-600 hover:text-gray-900 py-2">Resources</span>
                     <ul className="pl-4">
                       <li>
-                        <Link to="/documentation" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">Documentation</Link>
+                        <a to="/documentation" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">Documentation</a>
                       </li>
                       <li>
-                        <Link to="/support" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">Support center</Link>
+                        <a to="/support" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">Support center</a>
                       </li>
                       <li>
-                        <Link to="/404" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">404</Link>
+                        <a to="/404" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">404</a>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <Link to="/signin" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center">Sign in</Link>
+                    <a href="https://console.certwise.app/signin" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center">Sign in</a>
                   </li>
                   <li>
-                    <Link to="/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 w-full my-2">
+                    <a href="https://console.certwise.app/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 w-full my-2">
                       <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-teal-500">Early Access &#8594;</span>
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </Transition>

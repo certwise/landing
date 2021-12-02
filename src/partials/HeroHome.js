@@ -4,7 +4,14 @@ import Modal from '../utils/Modal';
 function HeroHome() {
 
   const [videoModalOpen, setVideoModalOpen] = useState(false);
+  const [email,setemail] = useState('');
+  const [isEmailSubmitted,setIsEmailSubmitted] = useState(false);
+  
+  const submitEmail = (e) => {
+    e.preventDefault();
+    setIsEmailSubmitted(true);
 
+  }
   return (
     <section className="relative">
 
@@ -35,14 +42,19 @@ function HeroHome() {
             <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Protect your brand with <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">Certwise</span></h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Your brand is an asset. Treat it like one.<br />Issue secure, verifiable digital credentials and prevent counterfeiting.</p>
-              <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
-                <div>
-                  <a className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Start free trial</a>
+              <form onSubmit={submitEmail} className="max-w-md mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
+                <input type='email' 
+                required
+                onChange={(e)=>setemail(e.target.value)}
+                className='form-input h-full shadow-lg border-sm w-full sm:w-1/2 md:w-1/2 lg:w-7/12 xl:w-7/12 2xl:w-7/12' placeholder="Enter your email" />
+                <div className='my-2 lg:invisible xl:invisible md:invisible'>
                 </div>
                 <div>
-                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">Learn more</a>
+                  <button
+                  type='submit'
+                  className="btn shadow-lg text-white bg-blue-500 hover:bg-blue-600 w-full h-full sm:w-auto sm:ml-4" >Request Early Access -&gt;</button>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
 
