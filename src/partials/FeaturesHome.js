@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../utils/Transition.js';
+import Process from '../partials/Process.js';
 
 function FeaturesHome() {
 
@@ -30,13 +31,14 @@ function FeaturesHome() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">How Certwise works</h1>
-            <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+            <h1 className="h2 mb-4">Issue with confidence.</h1>
+            <p className="text-xl text-gray-600">Nobody should second-guess themselves. Four easy steps, magical UI.<br />We've made it easy, so you don't have to worry.</p>
           </div>
 
           {/* Top image */}
           <div className="pb-12 md:pb-16">
-            <img src={require('../images/features-top-image.png').default} width="1104" height="325" alt="Features top" />
+            {/* <img src={require('../images/features-top-image.png').default} width="1104" height="325" alt="Features top" /> */}
+            <Process />
           </div>
 
           {/* Section content */}
