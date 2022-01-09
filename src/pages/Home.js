@@ -23,9 +23,9 @@ function Home() {
         <HeroHome />
         <FeaturesHome />
         <FeaturesBlocks />
-        <FeaturesWorld />
+        {/* <FeaturesWorld /> */}
         {/* <News /> */}
-        <Cta />
+        {/* <Cta /> */}
 
       </main>
 
