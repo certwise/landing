@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: { 
+      colors: {
         gray: {
           100: '#FBFBFB',
           200: '#EAEAEA',
@@ -134,6 +134,6 @@ module.exports = {
     opacity: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   plugins: [
-    require('@tailwindcss/forms'),
+    //require('@tailwindcss/forms'),
   ],
 };
