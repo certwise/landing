@@ -1,16 +1,24 @@
 import React, { useState } from 'react';
+import { createEarlyAccessRequest, isValidEmail } from '../api';
 import Modal from '../utils/Modal';
 
 function HeroHome() {
 
   const [videoModalOpen, setVideoModalOpen] = useState(false);
-  const [email,setemail] = useState('');
-  const [isEmailSubmitted,setIsEmailSubmitted] = useState(false);
-  
+  const [email, setemail] = useState('');
+  const [isEmailSubmitted, setIsEmailSubmitted] = useState(false);
+
   const submitEmail = (e) => {
     e.preventDefault();
-    setIsEmailSubmitted(true);
-
+    if (isValidEmail(email)) {
+      createEarlyAccessRequest(email).then((res) => {
+        if (res === true) {
+          setIsEmailSubmitted(true);
+        }
+        else
+          setIsEmailSubmitted("retried")
+      });
+    } else alert("Please enter a valid email address.");
   }
   return (
     <section className="relative">
@@ -43,18 +51,35 @@ function HeroHome() {
             <div className="max-w-3xl mx-auto">
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Your brand is an asset. Treat it like one.<br />Issue secure, verifiable digital credentials and prevent counterfeiting.</p>
               <form onSubmit={submitEmail} className="max-w-md mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
-                <input type='email' 
-                required
-                onChange={(e)=>setemail(e.target.value)}
-                className='form-input h-full shadow-lg border-sm w-full sm:w-1/2 md:w-1/2 lg:w-7/12 xl:w-7/12 2xl:w-7/12' placeholder="Enter your email" />
+                <input type='email'
+                  required
+                  onChange={(e) => setemail(e.target.value)}
+                  className='form-input h-full shadow-lg border-sm w-full sm:w-1/2 md:w-1/2 lg:w-7/12 xl:w-7/12 2xl:w-7/12' placeholder="Enter your email" />
                 <div className='my-2 lg:invisible xl:invisible md:invisible'>
                 </div>
                 <div>
-                  <button
-                  type='submit'
-                  className="btn shadow-lg text-white bg-blue-500 hover:bg-blue-600 w-full h-full sm:w-auto sm:ml-4" >Request Early Access -&gt;</button>
+                  {isEmailSubmitted === false && <button
+                    type='submit'
+                    className="btn shadow-lg text-white bg-blue-500 hover:bg-blue-600 w-full h-full sm:w-auto sm:ml-4" >Request Early Access -&gt;
+                  </button>}
+                  {isEmailSubmitted === true && <div
+                    type='submit'
+                    className="btn shadow-lg text-white bg-blue-500  w-full h-full sm:w-auto sm:ml-4" >Request sent !
+                  </div>}
                 </div>
               </form>
+              <div>
+                {isEmailSubmitted === true && <div className='text-blue-600 mt-3'>
+                  <b>
+                    You have been added to our Early Access list. Make sure your email is correct and you will receive an email with your invite code.
+                  </b>
+                </div>}
+                {isEmailSubmitted === "retried" && <div className='text-blue-600 mt-3'>
+                  <b>
+                    We already received your request. We will get in touch with you with an invite code.
+                  </b>
+                </div>}
+              </div>
             </div>
           </div>
 
@@ -118,3 +143,4 @@ function HeroHome() {
 }
 
 export default HeroHome;
+
