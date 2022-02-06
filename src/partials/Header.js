@@ -86,7 +86,9 @@ function Header() {
             {/* Desktop sign in links */}
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
-                <a href="https://console.certwise.app/signin" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in</a>
+                <a href="https://console.certwise.app/signin"
+                  className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in
+                </a>
               </li>
               <li>
                 <a href="https://console.certwise.app/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
@@ -158,12 +160,12 @@ function Header() {
                     </ul>
                   </li>
                   <li>
-                    <Link href="https://console.certwise.app/signin" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center">Sign in</Link>
+                    <a href="https://console.certwise.app/signin" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center">Sign in</a>
                   </li>
                   <li>
-                    <Link href="https://console.certwise.app/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 w-full my-2">
+                    <a href="https://console.certwise.app/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 w-full my-2">
                       <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-teal-500">Early Access &#8594;</span>
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </Transition>
