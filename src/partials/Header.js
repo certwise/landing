@@ -39,7 +39,7 @@ function Header() {
     };
     window.addEventListener('scroll', scrollHandler);
     return () => window.removeEventListener('scroll', scrollHandler);
-  }, [top]);  
+  }, [top]);
 
   return (
     <header className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${!top && 'bg-white blur shadow-lg'}`}>
@@ -73,7 +73,7 @@ function Header() {
               </li>
               <li>
                 <Link to="/blog" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Blog</Link>
-              </li>              
+              </li>
               {/* 1st level: hover */}
               <Dropdown title="Resources">
                 {/* 2nd level: hover */}
@@ -95,12 +95,12 @@ function Header() {
             {/* Desktop sign in links */}
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
-                <Link href="https://console.certwise.app/signin" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>
+                <a href="https://console.certwise.app/signin" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in</a>
               </li>
               <li>
-                <Link href="https://console.certwise.app/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
+                <a href="https://console.certwise.app/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
                   <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-teal-500">Early Access &#8594;</span>
-                </Link>
+                </a>
               </li>
             </ul>
 
@@ -137,7 +137,7 @@ function Header() {
                 enterEnd="opacity-100 translate-y-0"
                 leave="transition ease-out duration-200"
                 leaveStart="opacity-100"
-                leaveEnd="opacity-0"              
+                leaveEnd="opacity-0"
               >
                 <ul className="px-5 py-2">
                   <li>
@@ -148,10 +148,10 @@ function Header() {
                   </li>
                   <li>
                     <Link to="/tutorials" className="flex text-gray-600 hover:text-gray-900 py-2">Tutorials</Link>
-                  </li>  
+                  </li>
                   <li>
                     <Link to="/blog" className="flex text-gray-600 hover:text-gray-900 py-2">Blog</Link>
-                  </li>                                  
+                  </li>
                   <li className="py-2 my-2 border-t border-b border-gray-200">
                     <span className="flex text-gray-600 hover:text-gray-900 py-2">Resources</span>
                     <ul className="pl-4">
