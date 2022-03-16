@@ -18,7 +18,7 @@ function FeaturesBlocks() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Explore the features</h2>
-            <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+            <p className="text-xl text-gray-600">Start issuing digital credentials from scratch. Or simply upgrade from an existing printed certificate process. Certwise has you covered.</p>
           </div>
 
           {/* Items */}
@@ -30,7 +30,7 @@ function FeaturesBlocks() {
                 <GiPadlock className="w-8 h-8 fill-current text-gray-100 m-3 p-0.5" />
               </div>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 mt-1 pt-2">Secure data management</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center">We use industry standard technology to ensure that your recipients' information is protected.</p>
             </div>
 
             {/* 2nd item */}
@@ -39,7 +39,7 @@ function FeaturesBlocks() {
                 <MdOutlineCheck className="w-8 h-8 fill-current text-gray-100 m-3 p-0.5" />
               </div>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 mt-1 pt-2">Instant Verification</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center">Recipients can now share their certificates with confidence. Quickly and easily verify the authenticity of the certificate.</p>
             </div>
 
             {/* 3rd item */}
@@ -49,7 +49,7 @@ function FeaturesBlocks() {
               </div>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 mt-1 pt-2">Analytics</h4>
               <div className="rounded-full px-2 text-xs mb-2 border border-indigo-600 text-indigo-600">Coming Soon</div>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center">Use data analytics to understand how your recipients share their credentials, and how other people engage with it.</p>
             </div>
 
             {/* 4th item */}
@@ -59,7 +59,7 @@ function FeaturesBlocks() {
               </div>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 mt-1 pt-2">White Labelling</h4>
               <div className="rounded-full px-2 text-xs mb-2 border border-indigo-600 text-indigo-600">Coming Soon</div>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center">Recipients recognize &amp; trust your logo and domain, so that's what they see, not ours.</p>
             </div>
 
             {/* 5th item */}
@@ -68,7 +68,7 @@ function FeaturesBlocks() {
                <MdOutlineMoreTime className="w-8 h-8 fill-current text-gray-100 m-3 p-0.5" />
               </div>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 mt-1 pt-2">Forever Promise</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center">We charge per credential, not per month. You like to keep your credentials up. So do we.</p>
             </div>
 
             {/* 6th item */}
@@ -78,7 +78,7 @@ function FeaturesBlocks() {
               </div>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 mt-1 pt-2">Integrate with your tools</h4>
               <div className="rounded-full px-2 text-xs mb-2 border border-indigo-600 text-indigo-600">Coming Soon</div>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center">Use your existing tools with certwise to set up a seamless, automatic process.</p>
             </div>
 
           </div>

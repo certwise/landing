@@ -5,11 +5,21 @@ function DocumentationContent() {
     <div className="md:flex-grow">
 
       <div className="text-lg text-gray-600">
-        <h2 className="h2 text-gray-900 mb-4">Introduction to Simple</h2>
-        <p className="mb-8">
-          Aenean sed adipiscing diam donec <strong className="font-medium text-gray-900">adipiscing tristique risus</strong> nec feugiat auctor urna nunc id cursus metus aliquam eleifend, arcu dictum varius duis at consectetur lorem donec massa sapien, sed risus ultricies tristique nulla aliquet. <strong className="font-medium text-gray-900">Morbi tristique senectus</strong> et netus et, nibh nisl condimentum id venenatis a condimentum vitae sapien.
+        <h2 className="h2 text-gray-900 mb-4">Getting Started</h2>
+        <p className="flex items-center text-base px-3 py-4 text-gray-800 bg-blue-100 border border-blue-200 rounded mb-8">
+          <svg className="w-4 h-4 fill-current text-blue-500 flex-shrink-0 mr-2" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 0a8 8 0 100 16A8 8 0 008 0zm2.629 11.618L8 10.236l-2.629 1.382.5-2.927-2.124-2.073 2.939-.427L8 3.528l1.314 2.663 2.939.427-2.126 2.073.502 2.927z" fill="#338CF5" fillRule="nonzero" />
+          </svg>
+          <span>The documentation is still a work in progress. We will gradually improve this page and add more documentation as we grow.</span>
         </p>
-        <h3 id="installation" className="h3 text-gray-900 mb-4" style={{ scrollMarginTop: '100px' }}>Installation</h3>
+        <p className="mb-8">
+          Here is a video demo of how to use Certwise and all it's features.
+        </p>
+        <figure className="mb-8">
+          <img className="w-full rounded" src={require('../images/docs-image-01.png').default} width="768" height="390" alt="Docs 01" />
+        </figure>
+
+        {/* <h3 id="installation" className="h3 text-gray-900 mb-4" style={{ scrollMarginTop: '100px' }}>Installation</h3>
         <p className="mb-8">
           Sit amet cursus sit amet dictum sit amet. Mattis pellentesque id nibh tortor id nulla aliquet porttitor lacus luctus accumsan, tortor posuere pellentesque habitant morbi tristique senectus et netus. Lacinia quis vel eros donec ac odio tempor duis ut diam quam nulla. Tellus orci ac auctor augue mauris augue.
         </p>
@@ -19,12 +29,7 @@ function DocumentationContent() {
         <p className="mb-8">
           Sit amet cursus sit amet dictum sit amet mattis pellentesque id nibh tortor id, nulla aliquet porttitor lacus luctus accumsan tortor posuere. <strong className="font-medium text-gray-900">Pellentesque habitant morbi</strong> tristique senectus et netus, lacinia quis vel eros donec ac odio tempor. Duis ut diam quam nulla tellus orci ac auctor augue mauris augue.
         </p>
-        <p className="flex items-center text-base px-3 py-4 text-gray-800 bg-blue-100 border border-blue-200 rounded mb-8">
-          <svg className="w-4 h-4 fill-current text-blue-500 flex-shrink-0 mr-2" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 0a8 8 0 100 16A8 8 0 008 0zm2.629 11.618L8 10.236l-2.629 1.382.5-2.927-2.124-2.073 2.939-.427L8 3.528l1.314 2.663 2.939.427-2.126 2.073.502 2.927z" fill="#338CF5" fillRule="nonzero" />
-          </svg>
-          <span>Check out the <a className="text-blue-600 hover:underline" href="#0">Terms and license page</a> to know more about our license.</span>
-        </p>
+        
         <h3 id="quick" className="h3 text-gray-900 mb-8" style={{ scrollMarginTop: '100px' }}>Quick start</h3>
         <h4 className="h4 text-gray-900 mb-4">Customising settings</h4>
         <p className="mb-8">
@@ -51,11 +56,11 @@ function DocumentationContent() {
         </p>
         <p>
           For more information on what to do next, we recommend the following articles:
-        </p>
+        </p> */}
       </div>
 
       {/* Related content */}
-      <div className="mt-8">
+      {/* <div className="mt-8">
         <h3 className="h3 mb-8">Related</h3>
         <a className="flex justify-between items-center p-4 rounded border border-gray-200 transition duration-300 ease-in-out bg-white shadow-md hover:shadow-lg mb-4" href="#0">
           <div>
@@ -76,10 +81,10 @@ function DocumentationContent() {
           </svg>
         </a>
         <hr className="w-full h-px pt-px bg-gray-200 border-0 mt-8" />
-      </div>
+      </div> */}
 
       {/* Feedback */}
-      <div className="pt-6">
+      {/* <div className="pt-6">
         <div className="flex flex-col text-center sm:text-left sm:flex-row sm:justify-between sm:items-center">
           <div className="font-medium mb-4 md:mb-0">Was this page helpful?</div>
           <ul className="inline-flex justify-center -m-2">
@@ -125,7 +130,7 @@ function DocumentationContent() {
           </ul>
         </div>
         <hr className="w-full h-px pt-px bg-gray-200 border-0 mt-6" />
-      </div>
+      </div> */}
 
     </div>
   );

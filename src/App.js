@@ -21,6 +21,7 @@ import Documentation from './pages/Documentation';
 import Help from './pages/Support';
 import PageNotFound from './pages/PageNotFound';
 import FaqPage from './pages/FaqPage';
+import Roadmap from './pages/RoadmapPage';
 
 function App() {
 
@@ -50,22 +51,22 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/tutorials">
+        {/* <Route path="/tutorials">
           <Tutorials />
-        </Route>
-        <Route path="/pricing">
+        </Route> */}
+        {/* <Route path="/pricing">
           <Pricing />
-        </Route>
-        <Route path="/blog">
+        </Route> */}
+        {/* <Route path="/blog">
           <Blog />
-        </Route>
-        <Route path="/blog-post">
+        </Route> */}
+        {/* <Route path="/blog-post">
           <BlogPost />
-        </Route>
+        </Route> */}
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/documentation">
+        <Route path="/docs">
           <Documentation />
         </Route>
         <Route path="/support">
@@ -73,6 +74,9 @@ function App() {
         </Route>
         <Route path="/faq">
           <FaqPage />
+        </Route>
+        <Route path="/roadmap">
+          <Roadmap />
         </Route>
         <Route path="*">
           <PageNotFound />

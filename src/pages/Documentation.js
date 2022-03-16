@@ -30,7 +30,7 @@ function Documentation() {
                   <div data-sticky data-margin-top="100" data-sticky-for="768" data-sticky-wrap>
 
                     {/* Search form */}
-                    <form className="mb-4 pb-4 border-b border-gray-200">
+                    {/* <form className="mb-4 pb-4 border-b border-gray-200">
                       <div className="flex flex-wrap">
                         <div className="w-full">
                           <label className="block text-sm sr-only" htmlFor="search">Search</label>
@@ -44,7 +44,7 @@ function Documentation() {
                           </div>
                         </div>
                       </div>
-                    </form>
+                    </form> */}
 
                     <button className="flex items-center justify-between text-lg font-medium text-gray-900 w-full my-4 md:hidden" onClick={(e) => { e.preventDefault(); setSidebarNavOpen(!sidebarNavOpen); }}>
                       <span>Docs navigation</span>
@@ -72,12 +72,12 @@ function Documentation() {
                               </svg>
                               <span>Introduction</span>
                             </div>
-                            <svg className="w-3 h-3 fill-current text-gray-400 cursor-pointer ml-1 flex-shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                            {/* <svg className="w-3 h-3 fill-current text-gray-400 cursor-pointer ml-1 flex-shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                               <path d="M10.28 4.305L5.989 8.598 1.695 4.305A1 1 0 00.28 5.72l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z" />
-                            </svg>
+                            </svg> */}
                           </a>
                           {/* 2nd level */}
-                          <ul
+                          {/* <ul
                             className={`font-normal -mb-1 mt-1 ml-2 pl-5 border-l border-gray-300 ${!sidebarLinkOpen && 'hidden'}`}
                           >
                             <li className="py-1">
@@ -89,9 +89,9 @@ function Documentation() {
                             <li className="py-1">
                               <a className="text-gray-600 hover:underline" href="#folder">Folder content</a>
                             </li>
-                          </ul>
+                          </ul> */}
                         </li>
-                        <li className="py-2">
+                        {/* <li className="py-2">
                           <a className="flex items-center hover:underline" href="#introduction">
                             <div className="flex items-center flex-grow">
                               <svg className="w-4 h-4 fill-current text-blue-600 mr-3 flex-shrink-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -100,8 +100,8 @@ function Documentation() {
                               <span>Components</span>
                             </div>
                           </a>
-                        </li>
-                        <li className="py-2">
+                        </li> */}
+                        {/* <li className="py-2">
                           <a className="flex items-center hover:underline" href="#introduction">
                             <div className="flex items-center flex-grow">
                               <svg className="w-4 h-4 fill-current text-blue-600 mr-3 flex-shrink-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -110,8 +110,8 @@ function Documentation() {
                               <span>Page layouts</span>
                             </div>
                           </a>
-                        </li>
-                        <li className="py-2">
+                        </li> */}
+                        {/* <li className="py-2">
                           <a className="flex items-center hover:underline" href="#introduction">
                             <div className="flex items-center flex-grow">
                               <svg className="w-4 h-4 fill-current text-blue-600 mr-3 flex-shrink-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -120,8 +120,8 @@ function Documentation() {
                               <span>Resources</span>
                             </div>
                           </a>
-                        </li>
-                        <li className="py-2">
+                        </li> */}
+                        {/* <li className="py-2">
                           <a className="flex items-center hover:underline" href="#introduction">
                             <div className="flex items-center flex-grow">
                               <svg className="w-4 h-4 fill-current text-blue-600 mr-3 flex-shrink-0" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -132,7 +132,7 @@ function Documentation() {
                               <span>Extras</span>
                             </div>
                           </a>
-                        </li>
+                        </li> */}
                       </ul>
                     </nav>
 
